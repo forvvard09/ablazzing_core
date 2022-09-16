@@ -1,6 +1,7 @@
 package lessons.lesson8;
 
-import org.lessons.lesson8.expert.DataGenerator;
+
+import lessons.lesson8.expert.DataGenerator;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
