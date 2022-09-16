@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        FinancialRecord[] financialRecordsArray = new FinancialRecord[COUNT_REPORTS];
+        final FinancialRecord[] financialRecordsArray = new FinancialRecord[COUNT_REPORTS];
         //System.out.println(Arrays.toString(fillRecordsArray(financialRecordsArray)));
         recordToFile(PATH + FILE_NAME, fillRecordsArray(financialRecordsArray));
         printResult(PATH + FILE_NAME);
@@ -28,7 +28,7 @@ public class Main {
         return r.nextInt(10000);
     }
 
-    public static FinancialRecord[] fillRecordsArray(FinancialRecord[] inputArray) {
+    public static FinancialRecord[] fillRecordsArray(final FinancialRecord[] inputArray) {
         /*for (FinancialRecord item: financialRecordCopy) {
             item = new FinancialRecord(generatorNumber(), generatorNumber());
         }*/
@@ -49,7 +49,7 @@ public class Main {
         fileWriter.close();
     }
 
-    public static void printResult(String path) throws IOException {
+    public static void printResult(final String path) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
 
         //доход

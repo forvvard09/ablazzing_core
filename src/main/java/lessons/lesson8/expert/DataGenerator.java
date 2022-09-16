@@ -11,6 +11,8 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static homeworks.lesson08HW.Util.PATH;
+
 
 /**
  * Класс генерирует отчеты в папке resource в текущем проекте (создает папку, если она не существует)
@@ -27,7 +29,7 @@ public class DataGenerator {
     private static final int YEAR = 2012;
 
     public static void main(String[] args) throws IOException {
-        createReports("E:\\repos\\java_core_2\\resource");
+        createReports(PATH + "/expert");
     }
 
     public static void createReports(String filename) throws IOException {
