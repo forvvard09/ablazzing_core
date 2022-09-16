@@ -1,4 +1,4 @@
-package lessons.lesson2;
+package org.lessons.lesson2;
 
 public class HomeworkExpert {
     private final static String OPEN_TAG = "<data>";

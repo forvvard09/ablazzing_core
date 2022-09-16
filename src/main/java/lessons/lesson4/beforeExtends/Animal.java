@@ -1,4 +1,4 @@
-package lessons.lesson4.beforeExtends;
+package org.lessons.lesson4.beforeExtends;
 
 public class Animal {
     private String name;

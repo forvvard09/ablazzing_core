@@ -1,4 +1,4 @@
-package lessons.lesson3;
+package org.lessons.lesson3;
 
 public class Plane {
     private int countPassengers;

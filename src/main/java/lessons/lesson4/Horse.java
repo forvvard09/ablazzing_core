@@ -1,4 +1,4 @@
-package lessons.lesson4;
+package org.lessons.lesson4;
 
 public class Horse extends Animal {
     public Horse() {

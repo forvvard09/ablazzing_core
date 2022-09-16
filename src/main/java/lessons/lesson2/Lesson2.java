@@ -1,5 +1,6 @@
-package lessons.lesson2;
+package org.lessons.lesson2;
 
+import org.lessons.lesson3.Lesson3;
 
 public class Lesson2 {
     public static void main(String[] args) {
@@ -90,7 +91,7 @@ public class Lesson2 {
         // for ( (тип данных из массива) (имя переменной) : массив) { какой то код}
         // Пример: Перебор элементов массива
         int[] numbers = {1, 2, 3, 4};
-        for (int num : numbers) {
+        for (int num: numbers) {
             // Разовое выполнение кода внутри цикла называется итерацией
             System.out.println(num);
         }

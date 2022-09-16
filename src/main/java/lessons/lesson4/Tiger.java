@@ -1,4 +1,4 @@
-package lessons.lesson4;
+package org.lessons.lesson4;
 
 public class Tiger extends Mammal {
     public Tiger(int count, int countMilk) {
