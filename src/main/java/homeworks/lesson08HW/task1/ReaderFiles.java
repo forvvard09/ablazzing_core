@@ -4,9 +4,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+import static homeworks.lesson08HW.Util.PATH;
+
 public class ReaderFiles {
 
-    private final static String PATH = "./src/main/resource/";
     private final static String FILE_NAME = "my_first_file.txt";
 
     public static void main(String[] args) throws IOException {
@@ -22,10 +23,9 @@ public class ReaderFiles {
             sb.append(bufferedReader.readLine());
             sb.append(" ");
         }
+        bufferedReader.close();
 
         String result = sb.toString().trim().replaceAll("\"", "");
         System.out.println(String.format("\"%s\"", result));
-
-
     }
 }
